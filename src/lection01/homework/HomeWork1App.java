@@ -1,3 +1,5 @@
+// comments
+
 package lection01.homework;
 
 public class HomeWork1App {
