@@ -1,4 +1,5 @@
 package lection02.homework;
+// ismagilov marat homework02
 
 public class HomeWork2App {
 
