@@ -17,7 +17,6 @@ public class HomeWork3App {
         arrayFromReturn(10,258);
         arrayMinMaxValue();
 
-
     }
 
     public static int hwRandom () {
