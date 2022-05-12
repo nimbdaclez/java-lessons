@@ -125,7 +125,7 @@ public class HomeWork3App {
     public static int arrayFromReturn (int len, int initialValue) {
         int [] hwTask05 = new int [len];
         System.out.println();
-        System.out.println("Task 5 - Array length by user");
+        System.out.println("Task 5 - Array length and elements by user");
         for (int i = 0; i < hwTask05.length; i++) {
             hwTask05[i] = initialValue;
         }
@@ -139,13 +139,13 @@ public class HomeWork3App {
     }
 
     public static void arrayMinMaxValue () {
-        System.out.println("Task 5 - Min and Max numbers in array");
+        System.out.println("Task 6 - Min and Max numbers in array");
         int [] hwTask06 = new int [10];
         for (int i = 0; i < hwTask06.length; i++) {
             hwTask06[i] = random.nextInt (5, 55);
         }
-        int min = hwTask06[9];
-        int max = hwTask06[9];
+        int min = hwTask06[1];
+        int max = hwTask06[1];
         for (int i = 0; i < hwTask06.length; i++) {
             if (hwTask06[i] > max) {
                 max = hwTask06[i];
