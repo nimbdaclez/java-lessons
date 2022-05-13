@@ -1,9 +1,9 @@
-package lection04.online;
+package lection04.homework;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class on4 {
+public class HomeWork4App {
     public static Random random = new Random();
     public static Scanner scanner = new Scanner(System.in);
 
@@ -164,13 +164,7 @@ public class on4 {
         if (map[playerY][playerX] == enemy) {
             System.out.println();
             System.out.println("============ You meet ENEMY ====== Your HP: " + playerHP + " ====== Enemy HP: " + enemyHP + " ==============");
-            do {
-                enemyStr = random.nextInt(7, 14);
-                playerStr = random.nextInt(9, 17);
-                enemyHP -= playerStr;
-                System.out.println("You attack enemy on " + playerStr + " damage" + ". Enemy HP: " + enemyHP);
-                playerHP -= enemyStr;
-                System.out.println("Enemy attack you on " + enemyStr + " damage" + ". Your HP: " + playerHP);
+            do { battle();
             } while (enemyHP > 0);
             playerScore++;
             enemiesCount--;
@@ -180,6 +174,15 @@ public class on4 {
             coinsOnMap--;
             System.out.println("Player found " + coinsValue + " coin(s)" + ". Total player coins: " + playerCoins);
         }
+    }
+
+    public static void battle() {
+        enemyStr = random.nextInt(7, 14);
+        playerStr = random.nextInt(9, 17);
+        playerHP -= enemyStr;
+        System.out.println("Enemy attack you on " + enemyStr + " damage" + ". Your HP: " + playerHP);
+        enemyHP -= playerStr;
+        System.out.println("You attack enemy on " + playerStr + " damage" + ". Enemy HP: " + enemyHP);
     }
 
     public static boolean isValidPlayerMoveNextCell(int nextCellX, int nextCellY, int lastCellX, int lastCellY) {
