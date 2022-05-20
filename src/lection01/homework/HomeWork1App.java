@@ -1,6 +1,8 @@
+// comments
+
 package lection01.homework;
 
-public class HomeWorkApp {
+public class HomeWork1App {
     public static void main(String[] args) {
 
         printThreeWords();
@@ -12,7 +14,7 @@ public class HomeWorkApp {
             System.out.println("Sum " + "("+ Sum +") " + "is negative");
         }
 
-        int Color = printColor(101);
+        int Color = printColor(99);
         if (Color <= 0) {
             System.out.println("Red");
         } else if (Color >= 1 && Color <= 100) {
