@@ -25,7 +25,7 @@ public class on4 {
     public static int playerY;
 
     // Параметры врагов
-    public static char enemy = '_';
+    public static char enemy = '@';
     public static int enemyHP;
     public static int enemyStr;
 

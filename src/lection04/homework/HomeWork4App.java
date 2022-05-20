@@ -25,7 +25,7 @@ public class HomeWork4App {
     public static int playerY;
 
     // Параметры врагов
-    public static char enemy = '_';
+    public static char enemy = 'E';
     public static int enemyHP;
     public static int enemyStr;
 
@@ -159,8 +159,6 @@ public class HomeWork4App {
 
     public static void playerAction() {
 
-        enemyHP = random.nextInt(19, 26);
-
         if (map[playerY][playerX] == enemy) {
             System.out.println();
             System.out.println("============ You meet ENEMY ====== Your HP: " + playerHP + " ====== Enemy HP: " + enemyHP + " ==============");
@@ -177,6 +175,7 @@ public class HomeWork4App {
     }
 
     public static void battle() {
+        enemyHP = random.nextInt(19, 26);
         enemyStr = random.nextInt(7, 14);
         playerStr = random.nextInt(9, 17);
         playerHP -= enemyStr;
