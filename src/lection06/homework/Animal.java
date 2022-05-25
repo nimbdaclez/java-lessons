@@ -2,6 +2,7 @@ package lection06.homework;
 
 public class Animal {
 
+    // Конструктор родительского класса животные
     protected String type;
     protected String name;
     protected int runDistance;
@@ -18,7 +19,7 @@ public class Animal {
         System.out.println(type + " " + name + " ran " + runDistance + " meters");
     }
 
-    // Метод вывода в консоль о дистанции плавания животного, с простой проверкой на возможность плавать
+    // Метод вывода в консоль о дистанции плавания животного, с простой проверкой на возможность плавать.
     public void printSwimming() {
         if (swimDistance > 0) {
         System.out.println(type + " " + name + " swam " + swimDistance + " meters");

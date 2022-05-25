@@ -7,7 +7,7 @@ public class HomeWork6App {
         int dogCount = 0;
         int animalCount = 0;
 
-        // Объявляем массив с животным, передаем имя животного и дистанцию препятствия
+        // Объявляем массив с животным, передаем имя животного и дистанцию препятствия.
         Animal[] animals = new Animal[9];
         animals[0] = new Cat("Persik", 144,0);
         animals[1] = new Cat("Ciri", 187,0);
@@ -19,7 +19,7 @@ public class HomeWork6App {
         animals[7] = new Cat("Michail", 180,0);
         animals[8] = new Dog("Michail", 475,3);
 
-        // Цикл для обработки массива с выводом методов из классов и проверкой на принадлежность к определенным классам
+        // Цикл для обработки массива с выводом методов из классов и проверкой на принадлежность к определенным классам.
         for (int i = 0; i < animals.length; i++){
             animals[i].printRunning();
             animals[i].printSwimming();
