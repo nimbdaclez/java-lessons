@@ -23,12 +23,11 @@ public class HomeWork6App {
         for (int i = 0; i < animals.length; i++){
             animals[i].printRunning();
             animals[i].printSwimming();
+            animalCount +=1;
             if (animals[i] instanceof Cat) {
                 catCount += 1;
             } else if (animals[i] instanceof Dog) {
                 dogCount +=1;
-            } else if (animals[i] instanceof Animal) {
-                animalCount +=1;
             }
         }
         System.out.println("--------------------------");
