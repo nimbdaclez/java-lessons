@@ -16,8 +16,8 @@ public class HomeWork6App {
         animals[4] = new Dog("Baron", 435,8);
         animals[5] = new Cat("Latyshka", 124,0);
         animals[6] = new Dog("Michail", 256,4);
-        animals[7] = new Cat("Michail", 180,0);
-        animals[8] = new Dog("Michail", 475,3);
+        animals[7] = new Cat("Dinamo", 180,0);
+        animals[8] = new Dog("Apriel", 475,3);
 
         // Цикл для обработки массива с выводом методов из классов и проверкой на принадлежность к определенным классам.
         for (int i = 0; i < animals.length; i++){
