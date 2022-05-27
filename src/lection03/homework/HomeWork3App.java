@@ -17,7 +17,6 @@ public class HomeWork3App {
         arrayFromReturn(10,258);
         arrayMinMaxValue();
 
-
     }
 
     public static int hwRandom () {
@@ -53,12 +52,11 @@ public class HomeWork3App {
 
     public static void oneHundredArray () {
         int [] hwTask02 = new int [100];
-        hwTask02[0] = 1;
         System.out.println();
         System.out.println("Task 2 - One hundred numbers array from 1 to 100");
 
-        for (int i = 1; i < hwTask02.length; i++) {
-            hwTask02[i] = hwTask02 [i-1] + 1;
+        for (int i = 0; i < hwTask02.length; i++) {
+            hwTask02[i] = i + 1;
         }
 
         for (int i = 0; i < hwTask02.length; i++) {
@@ -68,20 +66,7 @@ public class HomeWork3App {
     }
 
     public static void dividingNumbersInArray () {
-        int [] hwTask03 = new int [12];
-        hwTask03[0] = 1;
-        hwTask03[1] = 5;
-        hwTask03[2] = 3;
-        hwTask03[3] = 2;
-        hwTask03[4] = 11;
-        hwTask03[5] = 4;
-        hwTask03[6] = 5;
-        hwTask03[7] = 2;
-        hwTask03[8] = 4;
-        hwTask03[9] = 8;
-        hwTask03[10] = 9;
-        hwTask03[11] = 1;
-
+        int[] hwTask03 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         System.out.println();
         System.out.println("Task 3 - Dividing numbers which < 6 on 2 in array");
         System.out.print("ORIGINAL NUMBERS | ");
@@ -90,7 +75,7 @@ public class HomeWork3App {
         }
         System.out.println();
         for (int i = 0; i < hwTask03.length; i++) {
-            if (hwTask03[i] < 6 ) {
+            if (hwTask03[i] < 6) {
                 hwTask03[i] = hwTask03[i] * 2;
             }
         }
@@ -123,10 +108,10 @@ public class HomeWork3App {
         }
     }
 
-    public static int arrayFromReturn (int len, int initialValue) {
+    public static int [] arrayFromReturn (int len, int initialValue) {
         int [] hwTask05 = new int [len];
         System.out.println();
-        System.out.println("Task 5 - Array length by user");
+        System.out.println("Task 5 - Array length and elements by user");
         for (int i = 0; i < hwTask05.length; i++) {
             hwTask05[i] = initialValue;
         }
@@ -136,7 +121,7 @@ public class HomeWork3App {
         }
         System.out.println();
         System.out.println();
-        return len;
+        return hwTask05;
     }
 
     public static void arrayMinMaxValue () {
@@ -145,8 +130,8 @@ public class HomeWork3App {
         for (int i = 0; i < hwTask06.length; i++) {
             hwTask06[i] = random.nextInt (5, 55);
         }
-        int min = hwTask06[9];
-        int max = hwTask06[9];
+        int min = hwTask06[1];
+        int max = hwTask06[1];
         for (int i = 0; i < hwTask06.length; i++) {
             if (hwTask06[i] > max) {
                 max = hwTask06[i];
