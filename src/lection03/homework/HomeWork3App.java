@@ -140,7 +140,7 @@ public class HomeWork3App {
     }
 
     public static void arrayMinMaxValue () {
-        System.out.println("Task 5 - Min and Max numbers in array");
+        System.out.println("Task 6 - Min and Max numbers in array");
         int [] hwTask06 = new int [10];
         for (int i = 0; i < hwTask06.length; i++) {
             hwTask06[i] = random.nextInt (5, 55);
